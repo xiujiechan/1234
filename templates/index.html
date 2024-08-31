@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>書店首頁</title>
+</head>
+
+<body>
+    <h1>目前書籍</h1>
+    <!-- {{books}} -->
+
+    {% for key in books %}
+    <li>{{books[key].name}}</li>
+    <li>{{books[key].price}}</li>
+    <li>{{books[key].image_url}}</li>
+    <hr>
+    {% endfor %}
+
+</body>
+
+</html>
